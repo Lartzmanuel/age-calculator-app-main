@@ -1,0 +1,273 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+.attribution {margin-top: 30px;}
+
+:root {
+    --purple: hsl(259, 100%, 65%);
+    --light-red: hsl(0, 100%, 67%);
+    --white: hsl(0, 0%, 100%);
+    --off-white: hsl(0, 0%, 94%);
+    --light-grey: hsl(0, 0%, 86%);
+    --smokey-grey: hsl(0, 1%, 44%);
+    --off-black: hsl(0, 0%, 8%);
+}
+
+@font-face {
+    font-family: 'Poppins-ExtraBold';
+    src: url(/assets/fonts/Poppins-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url(/assets/fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins-ExtraBoldItalic';
+    src: url(/assets/fonts/Poppins-ExtraBoldItalic.ttf);
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url(/assets/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins-Italic';
+    src: url(/assets/fonts/Poppins-Italic.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins-Regular';
+    background-color: var(--off-white);
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.date-card {
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 15px 15px 25% 15px;
+    background-color: var(--white);
+    margin-top: 50px;
+}
+
+.wrapper {
+    width: 100%;
+    padding: 35px 20px;
+}
+
+.input-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3rem;
+}
+
+.day, .month, .year {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+label {
+    text-transform: uppercase;
+    color: var(--smokey-grey);
+    font-family: 'Poppins-Bold';
+    font-size: 10px;
+    padding-bottom: 5px;
+    letter-spacing: 1.5px;
+}
+
+input {
+    padding: 10px 10px 10px 10px;
+    border: 1px solid var(--light-grey);
+    border-radius: 5px;
+    font-family: 'Poppins-ExtraBold';
+    font-size: 1rem;
+    outline: none;
+}
+
+button {
+    border-radius: 50%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--purple);
+    position: absolute;
+    left: 38%;
+    bottom: -40px;
+}
+
+button:hover{
+    background-color: var(--off-black);
+    cursor: pointer;
+}
+
+.form {
+    position: relative;
+    border-bottom: 1px solid var(--light-grey);
+}
+
+.info {
+    margin-top: 60px;
+    font-family: 'Poppins-ExtraBoldItalic';
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 1;
+    color: var(--off-black);
+}
+
+span{
+    color: var(--purple);
+}
+
+.error {
+    color: var(--light-red);
+    font-size: 8px;
+    line-height: 1;
+    padding-top: 8px;
+    font-family: 'Poppins-Italic';
+}
+
+.number {
+    margin-right: 8px;
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1440px){
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+    } 
+
+    .date-card {
+        margin: 0;
+        max-width: 600px;
+        padding: 20px;
+    }
+
+    .input-wrapper {
+        width: 75%;
+    }
+
+    .day-error, .month-error, .year-error {
+        padding: 5px 0;
+        font-size: 12px;
+    }
+
+    .form {
+        position: relative;
+    }
+
+    .info {
+        margin-top: 30px;
+        font-size: 5rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    input {
+        padding: 15px 10px;
+    }
+
+    button {
+        position: absolute;
+        left: 86%;
+    }
+
+    .error {
+        color: var(--light-red);
+        font-size: 10px;
+        line-height: 1;
+        padding-top: 5px ;
+    }
+
+    .attribution{
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+@media only screen and (min-width: 1440px){
+
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    .date-card {
+        margin: 0;
+        max-width: 650px;
+        padding: 20px;
+    }
+
+    .input-wrapper {
+        width: 75%;
+        gap: 2.5rem;
+    }
+
+    .day-error, .month-error, .year-error {
+        padding: 5px 0;
+        font-size: 12px;
+    }
+
+    .form {
+        position: relative;
+    }
+
+    .info {
+        margin-top: 30px;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    button {
+        position: absolute;
+        left: 88%;
+    }
+
+    input {
+        padding: 15px 10px;
+    }
+
+    .error {
+        color: var(--light-red);
+        font-size: 11px;
+        line-height: 1;
+        padding-top: 5px ;
+    }
+
+    .attribution{
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+
+
+
