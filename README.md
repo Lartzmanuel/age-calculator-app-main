@@ -41,7 +41,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL:[Github repo](https://your-solution-url.com)
+- Solution URL:[Github repo](https://github.com/Lartzmanuel/age-calculator-app-main.git )
 - Live Site URL: [Vercel.com](https://age-calculator-app-main-sage.vercel.app/)
 
 ## My process
